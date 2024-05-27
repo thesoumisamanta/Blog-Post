@@ -1,0 +1,30 @@
+{% extends "main.html" %}
+
+{% block title %}
+
+<title>thesoumisamanta</title>
+
+{% endblock title %}
+
+
+
+{% block body %}
+
+<body class="h-100 text-center text-bg-white">
+
+    <main class="px-3 text-center my-5">
+        <h1 class="my-5 fw-bold text-dark">thesoumisamanta</h1>
+    </main>
+    
+    <div class="social-icons">
+        <h2>Get In Touch</h2>
+        <a href="mailto:samantasoumi10@gmail.com" target="_blank"><img src="{{url_for('static', filename='mail.png')}}" alt="Gmail"></a>
+        <a href="https://github.com/thesoumisamanta" target="_blank"><img src="{{url_for('static', filename='github.png')}}" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/soumi-samanta-1ba258236" target="_blank"><img src="{{url_for('static', filename='linkedin.png')}}"
+                alt="LinkedIn"></a>
+    </div>
+
+    
+
+</body>
+{% endblock body %}

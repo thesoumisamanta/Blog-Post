@@ -1,0 +1,30 @@
+{% extends "main.html" %}
+
+{% block title %}
+<title>Add a post</title>
+{% endblock title %}
+
+{% block body %}
+<div class="container">
+    <h1 class="text-center">Add a Post</h1>
+    <form action="/post" method="post" enctype="multipart/form-data">
+        <div class="mb-3 mt-5">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" name="title" class="form-control" id="title" required>
+        </div>
+        <div class="mb-3">
+            <label for="content" class="form-label">Content</label>
+            <textarea class="form-control" name="content" id="content" rows="3" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="image" class="form-label">Attach File</label>
+            <input type="file" name="image" class="form-control" id="image" accept="image/*">
+        </div>
+        <div class="mb-3">
+            <label for="link" class="form-label">Enter Link</label>
+            <input type="url" name="link" class="form-control" id="link">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock body %}
